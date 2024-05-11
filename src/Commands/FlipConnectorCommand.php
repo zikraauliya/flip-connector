@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace ZikraAuliya\FlipConnector\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class FlipConnectorCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'flip-connector';
 
     public $description = 'My command';
 
