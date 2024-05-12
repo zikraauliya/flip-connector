@@ -4,7 +4,6 @@ namespace ZikraAuliya\FlipConnector;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use ZikraAuliya\FlipConnector\Commands\FlipConnectorCommand;
 
 class FlipConnectorServiceProvider extends PackageServiceProvider
 {
@@ -17,9 +16,6 @@ class FlipConnectorServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('flip-connector')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_flip-connector_table')
-            ->hasCommand(FlipConnectorCommand::class);
+            ->hasConfigFile();
     }
 }
