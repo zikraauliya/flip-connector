@@ -56,28 +56,6 @@ return [
     | Environment
     |--------------------------------------------------------------------------
     |
-    | This value is determines the enviroment of Flip Business API endpoint. It's either 'sandbox'
-    | for testing or 'production' for real live integration, default value is 'sandbox'.
-    |
-    */
-    'env' => env('FLIP_ENV', 'sandbox'),
-
-    /*
-    |--------------------------------------------------------------------------
-    | Secret Key
-    |--------------------------------------------------------------------------
-    |
-    | This value is the secret key found in your Flip Business account. This value is used when the
-    | package needs to generate a base64 encoded encryption for Flip Business authorization.
-    |
-    */
-    'secret_key' => env('FLIP_SECRET_KEY'),
-
-    /*
-    |--------------------------------------------------------------------------
-    | Environment
-    |--------------------------------------------------------------------------
-    |
     | This value is determines the enviroment of Flip Business API endpoint. Available options are 'big_sandbox_api'
     | for testing, 'kyc' (Know-Your-Client) for Non-PJP Agent Money Transfer  or 'api' for live production integration,
     | default value is 'big_sandbox_api'.
@@ -93,7 +71,7 @@ return [
     | This value is the base URL of Flip Business API endpoint. This value is based on env('FLIP_ENV').
     |
     */
-    'base_url' => 'https://bigflip.id/' . env('FLIP_ENV'),
+    'base_url' => 'https://bigflip.id/'.env('FLIP_ENV'),
 
     /*
     |--------------------------------------------------------------------------
