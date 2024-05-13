@@ -116,4 +116,11 @@ class FlipConnector extends Connector
     {
         return new SpecialMoneyTransfer($this);
     }
+
+    public static function generateSignature(string $payload, string $privateKey): string
+    {
+        openssl_sign($payload, $signature, $privateKey, 'sha256WithRSAEncryption');
+
+        return base64_encode($signature);
+    }
 }
