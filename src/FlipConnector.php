@@ -40,7 +40,7 @@ class FlipConnector extends Connector
      */
     public function resolveBaseUrl(): string
     {
-        return config('services.flip.url');
+        return config('services.flip.base_url');
     }
 
     /**
