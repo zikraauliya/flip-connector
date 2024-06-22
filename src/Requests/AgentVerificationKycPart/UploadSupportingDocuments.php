@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ZikraAuliya\FlipConnector\Requests\AgentVerificationKycPart;
 
 use Saloon\Contracts\Body\HasBody;

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ZikraAuliya\FlipConnector\Requests\General;
 
 use Saloon\Enums\Method;

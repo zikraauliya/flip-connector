@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ZikraAuliya\FlipConnector\Requests\InternationalTransfer;
 
 use Saloon\Enums\Method;
