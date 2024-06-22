@@ -2,7 +2,16 @@
 
 All notable changes to `flip-connector` will be documented in this file.
 
-## Saturday, 2024-06-22
+## Sunday, 2024-06-23 00:25
+
+    - create payload:
+        - DisbursementPayload
+        - AcceptPaymentPayload
+    - create transformer
+        - ImplodeTransformer
+    - remove DisbursementCallback as BillObject is sufficient
+
+## Saturday, 2024-06-22 16:30
 
     - update flip postman collection to 2.1
     - fix styling using laravel pint
