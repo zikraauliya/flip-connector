@@ -22,8 +22,7 @@ class GetCountryList extends Request
      */
     public function __construct(
         protected ?string $userType = null,
-    ) {
-    }
+    ) {}
 
     public function defaultQuery(): array
     {

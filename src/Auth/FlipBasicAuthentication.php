@@ -12,8 +12,7 @@ class FlipBasicAuthentication implements Authenticator
      */
     public function __construct(
         public string $secretKey,
-    ) {
-    }
+    ) {}
 
     /**
      * Apply the authentication to the request.

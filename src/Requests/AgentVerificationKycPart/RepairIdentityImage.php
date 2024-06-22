@@ -19,6 +19,5 @@ class RepairIdentityImage extends Request
 
     public function __construct(
         protected string $agentId,
-    ) {
-    }
+    ) {}
 }

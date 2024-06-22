@@ -16,4 +16,6 @@ class GetAllBills extends Request
     {
         return '/v2/pwf/bill';
     }
+
+    public function __construct() {}
 }

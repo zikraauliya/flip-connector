@@ -24,8 +24,7 @@ class GetFormData extends Request
     public function __construct(
         protected ?string $countryIsoCode = null,
         protected ?string $transactionType = null,
-    ) {
-    }
+    ) {}
 
     public function defaultQuery(): array
     {

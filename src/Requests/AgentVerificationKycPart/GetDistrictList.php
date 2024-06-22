@@ -24,8 +24,7 @@ class GetDistrictList extends Request
     public function __construct(
         protected ?string $userType = null,
         protected ?string $cityId = null,
-    ) {
-    }
+    ) {}
 
     public function defaultQuery(): array
     {

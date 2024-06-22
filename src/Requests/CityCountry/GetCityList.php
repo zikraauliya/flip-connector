@@ -16,4 +16,6 @@ class GetCityList extends Request
     {
         return '/v2/disbursement/city-list';
     }
+
+    public function __construct() {}
 }

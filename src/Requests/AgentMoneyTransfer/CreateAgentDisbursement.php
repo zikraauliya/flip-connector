@@ -21,7 +21,5 @@ class CreateAgentDisbursement extends Request implements HasBody
         return '/v2/agent-disbursements';
     }
 
-    public function __construct()
-    {
-    }
+    public function __construct() {}
 }

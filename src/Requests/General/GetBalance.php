@@ -16,4 +16,6 @@ class GetBalance extends Request
     {
         return '/v2/general/balance';
     }
+
+    public function __construct() {}
 }

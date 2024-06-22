@@ -19,6 +19,5 @@ class GetBill extends Request
 
     public function __construct(
         protected string $billId,
-    ) {
-    }
+    ) {}
 }

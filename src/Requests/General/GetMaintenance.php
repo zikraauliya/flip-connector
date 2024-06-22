@@ -6,9 +6,9 @@ use Saloon\Enums\Method;
 use Saloon\Http\Request;
 
 /**
- * Is Maintenance
+ * Get Maintenance
  */
-class IsMaintenance extends Request
+class GetMaintenance extends Request
 {
     protected Method $method = Method::GET;
 
@@ -16,4 +16,6 @@ class IsMaintenance extends Request
     {
         return '/v2/general/maintenance';
     }
+
+    public function __construct() {}
 }

@@ -20,4 +20,6 @@ class UploadSupportingDocuments extends Request implements HasBody
     {
         return '/v1/documents';
     }
+
+    public function __construct() {}
 }

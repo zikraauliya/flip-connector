@@ -24,8 +24,7 @@ class GetProvinceList extends Request
     public function __construct(
         protected ?string $userType = null,
         protected ?string $countryId = null,
-    ) {
-    }
+    ) {}
 
     public function defaultQuery(): array
     {

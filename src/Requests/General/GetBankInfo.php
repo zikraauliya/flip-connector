@@ -16,4 +16,6 @@ class GetBankInfo extends Request
     {
         return '/v2/general/banks';
     }
+
+    public function __construct() {}
 }

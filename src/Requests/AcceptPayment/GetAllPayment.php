@@ -32,8 +32,7 @@ class GetAllPayment extends Request
         protected ?string $page = null,
         protected ?string $sortBy = null,
         protected ?string $sortType = null,
-    ) {
-    }
+    ) {}
 
     public function defaultQuery(): array
     {

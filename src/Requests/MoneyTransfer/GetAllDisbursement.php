@@ -26,8 +26,7 @@ class GetAllDisbursement extends Request
         protected ?string $pagination = null,
         protected ?string $page = null,
         protected ?string $sort = null,
-    ) {
-    }
+    ) {}
 
     public function defaultQuery(): array
     {

@@ -16,4 +16,6 @@ class GetCountryList extends Request
     {
         return '/v2/disbursement/country-list';
     }
+
+    public function __construct() {}
 }

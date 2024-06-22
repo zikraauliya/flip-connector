@@ -26,8 +26,7 @@ class GetAllInternationalTransfer extends Request
         protected ?string $pagination = null,
         protected ?string $page = null,
         protected ?string $sortBy = null,
-    ) {
-    }
+    ) {}
 
     public function defaultQuery(): array
     {

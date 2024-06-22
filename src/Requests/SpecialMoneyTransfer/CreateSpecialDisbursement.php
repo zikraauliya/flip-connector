@@ -20,4 +20,6 @@ class CreateSpecialDisbursement extends Request implements HasBody
     {
         return '/v3/special-disbursement';
     }
+
+    public function __construct() {}
 }

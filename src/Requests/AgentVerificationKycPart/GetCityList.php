@@ -24,8 +24,7 @@ class GetCityList extends Request
     public function __construct(
         protected ?string $userType = null,
         protected ?string $provinceId = null,
-    ) {
-    }
+    ) {}
 
     public function defaultQuery(): array
     {

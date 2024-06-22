@@ -40,7 +40,10 @@ class FlipConnector extends Connector
      */
     public function resolveBaseUrl(): string
     {
-        return config('flip-connector.base_url');
+        /** @var string $baseUrl */
+        $baseUrl = config('flip-connector.base_url');
+
+        return $baseUrl;
     }
 
     /**
@@ -64,7 +67,10 @@ class FlipConnector extends Connector
 
     protected function defaultAuth(): FlipBasicAuthentication
     {
-        return new FlipBasicAuthentication(config('flip-connector.secret_key'));
+        /** @var string $secretKey */
+        $secretKey = config('flip-connector.secret_key');
+
+        return new FlipBasicAuthentication($secretKey);
     }
 
     public function acceptPayment(): AcceptPayment

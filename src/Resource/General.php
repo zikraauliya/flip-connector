@@ -5,7 +5,7 @@ namespace ZikraAuliya\FlipConnector\Resource;
 use Saloon\Http\Response;
 use ZikraAuliya\FlipConnector\Requests\General\GetBalance;
 use ZikraAuliya\FlipConnector\Requests\General\GetBankInfo;
-use ZikraAuliya\FlipConnector\Requests\General\IsMaintenance;
+use ZikraAuliya\FlipConnector\Requests\General\GetMaintenance;
 use ZikraAuliya\FlipConnector\Resource;
 
 class General extends Resource
@@ -20,8 +20,8 @@ class General extends Resource
         return $this->connector->send(new GetBankInfo());
     }
 
-    public function isMaintenance(): Response
+    public function getMaintenance(): Response
     {
-        return $this->connector->send(new IsMaintenance());
+        return $this->connector->send(new GetMaintenance());
     }
 }

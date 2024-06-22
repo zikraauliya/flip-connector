@@ -21,7 +21,5 @@ class CreateAgentIdentity extends Request implements HasBody
         return '/v2/agents';
     }
 
-    public function __construct()
-    {
-    }
+    public function __construct() {}
 }

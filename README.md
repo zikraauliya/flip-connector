@@ -106,6 +106,8 @@ $request = new GetBankInfoRequest;
 $response = $flip->send($request);
 ```
 
+For more usage information, consult [Flip Documentation](https://docs.flip.id/)
+
 ## Testing
 
 ```bash

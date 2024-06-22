@@ -22,8 +22,7 @@ class GetDisbursementByIdempotencyKey extends Request
      */
     public function __construct(
         protected ?string $idempotencyKey = null,
-    ) {
-    }
+    ) {}
 
     public function defaultQuery(): array
     {

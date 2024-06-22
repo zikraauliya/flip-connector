@@ -16,4 +16,6 @@ class GetCityAndCountryList extends Request
     {
         return '/v2/disbursement/city-country-list';
     }
+
+    public function __construct() {}
 }

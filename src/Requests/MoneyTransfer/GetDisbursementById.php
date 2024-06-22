@@ -22,8 +22,7 @@ class GetDisbursementById extends Request
      */
     public function __construct(
         protected ?string $id = null,
-    ) {
-    }
+    ) {}
 
     public function defaultQuery(): array
     {

@@ -20,4 +20,6 @@ class BankAccountInquiry extends Request implements HasBody
     {
         return '/v2/disbursement/bank-account-inquiry';
     }
+
+    public function __construct() {}
 }

@@ -20,4 +20,6 @@ class CreateInternationalTransfer extends Request implements HasBody
     {
         return '/v2/international-disbursement';
     }
+
+    public function __construct() {}
 }
