@@ -2,12 +2,20 @@
 
 All notable changes to `flip-connector` will be documented in this file.
 
+## Sunday, 2024-06-23 13:13
+
+    - create transformer:
+        - BooleanTransformer
+    - setup defaultBody for:
+        - CreateBill
+        - CreateDisbursement
+
 ## Sunday, 2024-06-23 00:25
 
     - create payload:
         - DisbursementPayload
         - AcceptPaymentPayload
-    - create transformer
+    - create transformer:
         - ImplodeTransformer
     - remove DisbursementCallback as BillObject is sufficient
 

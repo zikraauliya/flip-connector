@@ -6,9 +6,11 @@ namespace ZikraAuliya\FlipConnector\DTO;
 
 use DateTime;
 use Spatie\LaravelData\Attributes\MapName;
+use Spatie\LaravelData\Attributes\WithTransformer;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\Mappers\SnakeCaseMapper;
 use Spatie\LaravelData\Optional;
+use ZikraAuliya\FlipConnector\Casts\BooleanTransformer;
 use ZikraAuliya\FlipConnector\Enums\BankCode;
 use ZikraAuliya\FlipConnector\Enums\BankType;
 use ZikraAuliya\FlipConnector\Enums\BillStep;
@@ -19,11 +21,13 @@ class AcceptPaymentPayload extends Data
 {
     public function __construct(
         public ?string $title,
-        public ?int $amount,
         public ?BillType $type,
-        public ?DateTime $expiredDate,
-        public ?string $redirectUrl,
+        public int|Optional|null $amount = null,
+        public ?DateTime $expiredDate = null,
+        public string|Optional|null $redirectUrl = null,
+        #[WithTransformer(BooleanTransformer::class)]
         public bool $isAddressRequired = false,
+        #[WithTransformer(BooleanTransformer::class)]
         public bool $isPhoneNumberRequired = false,
         public BillStep|Optional $step = BillStep::InputData,
         public string|Optional|null $senderName = null,

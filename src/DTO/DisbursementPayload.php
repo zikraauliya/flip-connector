@@ -8,6 +8,7 @@ use Spatie\LaravelData\Attributes\MapName;
 use Spatie\LaravelData\Attributes\WithTransformer;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\Mappers\SnakeCaseMapper;
+use Spatie\LaravelData\Optional;
 use ZikraAuliya\FlipConnector\Casts\ImplodeTransformer;
 use ZikraAuliya\FlipConnector\Enums\BankCode;
 
@@ -15,12 +16,12 @@ use ZikraAuliya\FlipConnector\Enums\BankCode;
 class DisbursementPayload extends Data
 {
     public function __construct(
-        public ?string $accountNumber,
-        public ?BankCode $bankCode,
-        public ?int $amount,
-        public ?string $remark,
-        public ?int $recipientCity,
+        public string $accountNumber,
+        public BankCode $bankCode,
+        public int $amount,
+        public Optional|string|null $remark = null,
+        public Optional|int|null $recipientCity = null,
         #[WithTransformer(ImplodeTransformer::class)]
-        public ?string $beneficieryEmail,
+        public Optional|string|null $beneficieryEmail = null,
     ) {}
 }
