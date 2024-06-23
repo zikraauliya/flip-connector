@@ -16,7 +16,7 @@ class GetPayment extends Request
 
     public function resolveEndpoint(): string
     {
-        return "/v2/pwf/{$this->billId}/bill";
+        return "/v2/pwf/{$this->billId}/payment";
     }
 
     /**

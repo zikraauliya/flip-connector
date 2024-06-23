@@ -16,7 +16,7 @@ class GetAllPayment extends Request
 
     public function resolveEndpoint(): string
     {
-        return '/v2/pwf/bill';
+        return '/v2/pwf/payment';
     }
 
     /**
