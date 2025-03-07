@@ -14,7 +14,7 @@ class AgentMoneyTransfer extends Resource
 {
     public function createAgentDisbursement(): Response
     {
-        return $this->connector->send(new CreateAgentDisbursement());
+        return $this->connector->send(new CreateAgentDisbursement);
     }
 
     public function getAgentDisbursementById(string $transactionId): Response

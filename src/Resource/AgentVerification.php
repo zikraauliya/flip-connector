@@ -14,7 +14,7 @@ class AgentVerification extends Resource
 {
     public function createAgentIdentity(): Response
     {
-        return $this->connector->send(new CreateAgentIdentity());
+        return $this->connector->send(new CreateAgentIdentity);
     }
 
     public function updateAgentIdentity(string $agentId): Response

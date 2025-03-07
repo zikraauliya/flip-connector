@@ -14,16 +14,16 @@ class General extends Resource
 {
     public function getBalance(): Response
     {
-        return $this->connector->send(new GetBalance());
+        return $this->connector->send(new GetBalance);
     }
 
     public function getBankInfo(): Response
     {
-        return $this->connector->send(new GetBankInfo());
+        return $this->connector->send(new GetBankInfo);
     }
 
     public function getMaintenance(): Response
     {
-        return $this->connector->send(new GetMaintenance());
+        return $this->connector->send(new GetMaintenance);
     }
 }

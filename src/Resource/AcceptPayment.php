@@ -17,7 +17,7 @@ class AcceptPayment extends Resource
 {
     public function createBill(): Response
     {
-        return $this->connector->send(new CreateBill());
+        return $this->connector->send(new CreateBill);
     }
 
     public function editBill(string $billId): Response
@@ -32,7 +32,7 @@ class AcceptPayment extends Resource
 
     public function getAllBills(): Response
     {
-        return $this->connector->send(new GetAllBills());
+        return $this->connector->send(new GetAllBills);
     }
 
     /**

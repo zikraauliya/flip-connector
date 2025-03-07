@@ -12,6 +12,6 @@ class BankAccountInquiry extends Resource
 {
     public function bankAccountInquiry(): Response
     {
-        return $this->connector->send(new BankAccountInquiryRequest());
+        return $this->connector->send(new BankAccountInquiryRequest);
     }
 }

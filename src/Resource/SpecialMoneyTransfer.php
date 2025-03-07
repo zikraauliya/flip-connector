@@ -12,6 +12,6 @@ class SpecialMoneyTransfer extends Resource
 {
     public function createSpecialDisbursement(): Response
     {
-        return $this->connector->send(new CreateSpecialDisbursement());
+        return $this->connector->send(new CreateSpecialDisbursement);
     }
 }

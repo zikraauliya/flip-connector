@@ -26,7 +26,7 @@ class AgentVerificationKycPart extends Resource
 
     public function uploadSupportingDocuments(): Response
     {
-        return $this->connector->send(new UploadSupportingDocuments());
+        return $this->connector->send(new UploadSupportingDocuments);
     }
 
     public function kycSubmission(string $agentId): Response
