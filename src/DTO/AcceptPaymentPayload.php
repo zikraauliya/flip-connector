@@ -23,7 +23,7 @@ class AcceptPaymentPayload extends Data
         public ?string $title,
         public ?BillType $type,
         public int|Optional|null $amount = null,
-        public ?DateTime $expiredDate = null,
+        public ?string $expiredDate = null,
         public string|Optional|null $redirectUrl = null,
         #[WithTransformer(BooleanTransformer::class)]
         public bool $isAddressRequired = false,
