@@ -10,7 +10,6 @@ use Spatie\LaravelData\Data;
 use Spatie\LaravelData\Mappers\SnakeCaseMapper;
 use ZikraAuliya\FlipConnector\Enums\AcceptPaymentCallbackStatus;
 use ZikraAuliya\FlipConnector\Enums\BankCode;
-use ZikraAuliya\FlipConnector\Enums\BankType;
 
 #[MapName(SnakeCaseMapper::class)]
 class AcceptPaymentCallback extends Data
