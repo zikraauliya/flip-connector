@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace ZikraAuliya\FlipConnector\DTO;
 
-use DateTime;
 use Spatie\LaravelData\Attributes\MapName;
 use Spatie\LaravelData\Attributes\WithTransformer;
 use Spatie\LaravelData\Data;

@@ -15,7 +15,7 @@ class MoneyTransfer extends Resource
 {
     public function createDisbursement(): Response
     {
-        return $this->connector->send(new CreateDisbursement());
+        return $this->connector->send(new CreateDisbursement);
     }
 
     /**
@@ -38,7 +38,7 @@ class MoneyTransfer extends Resource
      */
     public function createDisbursementDuplicate1(): Response
     {
-        return $this->connector->send(new CreateDisbursement());
+        return $this->connector->send(new CreateDisbursement);
     }
 
     /**

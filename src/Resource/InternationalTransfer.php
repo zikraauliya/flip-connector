@@ -34,7 +34,7 @@ class InternationalTransfer extends Resource
 
     public function createInternationalTransfer(): Response
     {
-        return $this->connector->send(new CreateInternationalTransfer());
+        return $this->connector->send(new CreateInternationalTransfer);
     }
 
     public function getInternationalTransfer(string $transactionId): Response

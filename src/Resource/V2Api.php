@@ -12,6 +12,6 @@ class V2Api extends Resource
 {
     public function createTopup(): Response
     {
-        return $this->connector->send(new CreateTopup());
+        return $this->connector->send(new CreateTopup);
     }
 }

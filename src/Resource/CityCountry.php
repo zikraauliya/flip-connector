@@ -14,16 +14,16 @@ class CityCountry extends Resource
 {
     public function getCityList(): Response
     {
-        return $this->connector->send(new GetCityList());
+        return $this->connector->send(new GetCityList);
     }
 
     public function getCountryList(): Response
     {
-        return $this->connector->send(new GetCountryList());
+        return $this->connector->send(new GetCountryList);
     }
 
     public function getCityAndCountryList(): Response
     {
-        return $this->connector->send(new GetCityAndCountryList());
+        return $this->connector->send(new GetCityAndCountryList);
     }
 }
