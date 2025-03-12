@@ -11,7 +11,6 @@ use Spatie\LaravelData\Mappers\SnakeCaseMapper;
 use Spatie\LaravelData\Optional;
 use ZikraAuliya\FlipConnector\Casts\BooleanTransformer;
 use ZikraAuliya\FlipConnector\Enums\BankCode;
-use ZikraAuliya\FlipConnector\Enums\BankType;
 use ZikraAuliya\FlipConnector\Enums\BillStep;
 use ZikraAuliya\FlipConnector\Enums\BillType;
 
