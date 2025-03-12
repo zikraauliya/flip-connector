@@ -23,7 +23,7 @@ class PaymentObject extends Data
         public ?string $billTitle,
         public ?string $senderName,
         public ?BankCode $senderBank,
-        public ?BankType $senderBankType,
+        public ?string $senderBankType,
         public ?string $virtualAccountNumber,
         public ?string $amount,
         public ?PaymentObjectStatus $status,

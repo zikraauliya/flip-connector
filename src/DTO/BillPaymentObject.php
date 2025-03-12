@@ -21,7 +21,7 @@ class BillPaymentObject extends Data
         public ?int $uniqueCode,
         public ?BillPaymentTransactionStatus $status,
         public ?BankCode $senderBank,
-        public ?BankType $senderBankType,
+        public ?string $senderBankType,
         public ?BankAccount $receiverBankAccount,
         public ?string $userAddress,
         public ?string $userPhone,

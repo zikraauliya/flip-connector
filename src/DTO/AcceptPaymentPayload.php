@@ -34,6 +34,6 @@ class AcceptPaymentPayload extends Data
         public string|Optional|null $senderPhoneNumber = null,
         public string|Optional|null $senderAddress = null,
         public BankCode|Optional|null $senderBank = null,
-        public BankType|Optional|null $senderBankType = null,
+        public ?string $senderBankType = null,
     ) {}
 }

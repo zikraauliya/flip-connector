@@ -19,7 +19,7 @@ class BankInquiry extends BankAccount
         public ?string $accountNumber,
         public ?string $accountHolder,
         public ?BankAccountInquiryStatus $status,
-        public BankType|Optional|null $accountType = null,
+        public ?string $accountType = null,
         public string|Optional|null $inquiryKey = null,
     ) {
         parent::__construct(

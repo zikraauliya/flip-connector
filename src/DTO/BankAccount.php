@@ -20,6 +20,6 @@ class BankAccount extends Data
         public ?string $accountNumber,
         public ?string $accountHolder,
         public ?BankAccountInquiryStatus $status,
-        public BankType|Optional|null $accountType,
+        public ?string $accountType,
     ) {}
 }
