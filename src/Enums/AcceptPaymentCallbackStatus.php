@@ -9,4 +9,5 @@ enum AcceptPaymentCallbackStatus: string
     case SUCCESSFUL = 'SUCCESSFUL';
     case CANCELLED = 'CANCELLED';
     case FAILED = 'FAILED';
+    case PENDING = 'PENDING';
 }
