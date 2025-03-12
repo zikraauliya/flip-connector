@@ -9,7 +9,6 @@ use Spatie\LaravelData\Mappers\SnakeCaseMapper;
 use Spatie\LaravelData\Optional;
 use ZikraAuliya\FlipConnector\Enums\BankAccountInquiryStatus;
 use ZikraAuliya\FlipConnector\Enums\BankCode;
-use ZikraAuliya\FlipConnector\Enums\BankType;
 
 #[MapName(SnakeCaseMapper::class)]
 class BankInquiry extends BankAccount
