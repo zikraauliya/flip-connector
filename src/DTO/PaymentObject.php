@@ -27,7 +27,7 @@ class PaymentObject extends Data
         public ?string $virtualAccountNumber,
         public ?string $amount,
         public ?PaymentObjectStatus $status,
-        public ?PaymentObjectSettlementStatus $settlementStatus,
+        public ?string $settlementStatus,
         public ?string $referenceId,
         public ?string $paymentUrl,
         public ?DateTime $createdAt,
