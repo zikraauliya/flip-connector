@@ -9,7 +9,6 @@ use Spatie\LaravelData\Attributes\MapName;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\Mappers\SnakeCaseMapper;
 use ZikraAuliya\FlipConnector\Enums\BankCode;
-use ZikraAuliya\FlipConnector\Enums\PaymentObjectSettlementStatus;
 use ZikraAuliya\FlipConnector\Enums\PaymentObjectStatus;
 
 #[MapName(SnakeCaseMapper::class)]
