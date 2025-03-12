@@ -25,7 +25,7 @@ class AcceptPaymentCallback extends Data
         public ?string $senderEmail,
         public ?int $amount,
         public ?AcceptPaymentCallbackStatus $status,
-        public string|BankType|null $senderBankType,
+        public ?string $senderBankType,
         public ?DateTime $createdAt,
     ) {}
 }
